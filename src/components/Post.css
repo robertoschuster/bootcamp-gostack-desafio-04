@@ -28,4 +28,9 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 1.38;
+  padding: 8px;
+}
+
+.post-img {
+  width: 680px;
 }

@@ -17,13 +17,18 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+  /* margin: 1em 0; */
+  padding-bottom: 4px;
 }
+
+a {
+  color:inherit;
+  text-decoration: none;
+ }
 
 .avatar {
   /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
-  background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');    
+  /* background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');     */
   /* make a square container */
   width: 32px;
   height: 32px;
@@ -35,7 +40,4 @@ hr {
   /* round the edges to a circle with border radius 1/2 container size */
   border-radius: 50%;    
 }
-.avatar-diego {background-image: url('https://scontent.fria3-1.fna.fbcdn.net/v/t1.0-1/p160x160/59480734_2249174048509235_2974090043016085504_n.jpg?_nc_cat=111&_nc_sid=dbb9e7&_nc_eui2=AeErnS1aKiF0jPq-lQoM6bufnUZIublyMpeU3V0l1mDv1X23RxEMFd-NF6aaXAqh6bPvo8wz159xPOTnp2FFuDDP3qoGYyUosUilFvxPZp-33Q&_nc_ohc=tL2sQu_KxNsAX9L7el2&_nc_ht=scontent.fria3-1.fna&_nc_tp=6&oh=b38c0435b60cb73da156b36909dbe45f&oe=5EA55733');}
-.avatar-julio {background-image: url('https://scontent.fria3-1.fna.fbcdn.net/v/t1.0-1/p160x160/87936848_3065350366850186_5212260946218582016_o.jpg?_nc_cat=106&_nc_sid=dbb9e7&_nc_eui2=AeFPS2HHJ_r5Ei9FhGIijw1ImiFk-tKljSGfNsm1hdfP0RPT1KVpTcUFE4CwH81Gko0Tpi7w4Q8qqPhlXoNnt0D7vW-bwc2FSmT33M-bb6tATg&_nc_ohc=6mZfXjMvmFIAX9zg12-&_nc_ht=scontent.fria3-1.fna&_nc_tp=6&oh=f6461a92ff5e01cd0fa49dae95fc5f55&oe=5EA59D32');}
-.avatar-gabriel {background-image: url('https://scontent.fria3-1.fna.fbcdn.net/v/t1.0-1/p160x160/28166763_1574074142705401_3817739364812084841_n.jpg?_nc_cat=108&_nc_sid=dbb9e7&_nc_eui2=AeGVJUIvPzf_zPd_9WIitr5mRkNxE3H2foQCv3XCfxOgj71MKWDBP1mZReIlsolxWl9tQnPdJZt5zcmE5wtVjqIIAUh924ACQlS0xVaYr1z__A&_nc_ohc=6mQUcS-w0iwAX_Z0JYc&_nc_ht=scontent.fria3-1.fna&_nc_tp=6&oh=f0d757c67e1d36a424608d049fbbca2d&oe=5EA5D41E');}
-.avatar-roberto {background-image: url('https://scontent.fria3-1.fna.fbcdn.net/v/t1.0-1/p240x240/26733604_10214731659955197_3447193399133910388_n.jpg?_nc_cat=106&_nc_sid=dbb9e7&_nc_eui2=AeH3BUcGU8V6906jSfnFy-42tohvs0sIbHib6dywHp1F2yT5hrggo2-MR8IJ95a190hNbc03B8C2anx1MejM_TXdytXT4cverFH_WJEh4VeLfA&_nc_ohc=Ga75iN6hU8oAX8nR-ry&_nc_ht=scontent.fria3-1.fna&_nc_tp=6&oh=a00082670704dd3e28193f7d2b8cb9f9&oe=5EA688BD');}
+

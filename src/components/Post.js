@@ -2,21 +2,36 @@ import React from 'react';
 import './Post.css';
 import Comment from './Comment';
 
-function Post() {
+function Post({ data }) {
   return (
     <>
-      <div class="post">            
-          <div class="post-header">
-              <div class="avatar avatar-julio"></div>
-              <div>
-                  <div class="post-author">Júlio Alcantara</div>
-                  <div class="post-date">04 Jun 2019</div>    
-              </div>
+      <div className="post">            
+          <div className="post-header">
+            <a href={data.author.facebook_url}><div className="avatar" style={{backgroundImage: 'url(' + data.author.avatar + ')'}}></div></a>
+            <div>
+                <div className="post-author"><a href={data.author.facebook_url}>{data.author.name}</a></div>
+                <div className="post-date">{data.date}</div>    
+            </div>
           </div>
-          <div class="post-text">Pessoal, algém sabe se a Rocketseat está contratando?</div>            
-          <hr/>
-          <Comment />
-          <Comment />
+          <div className="post-text">{data.content}</div> 
+
+          { data.image && <img className="post-img" src={data.image}/>} 
+          
+                    
+          
+
+          { data.comments.length > 0 && <hr/>}
+
+          { data.comments &&
+            data.comments.map(comment => 
+              <Comment 
+                key={comment.id} 
+                data={comment}
+              />
+            )
+          }
+
+
       </div>
     </>
   );
