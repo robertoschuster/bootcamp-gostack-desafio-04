@@ -1,0 +1,147 @@
+
+/* App */
+
+body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ebee;
+    color: #1d2129;
+    -webkit-font-smoothing: antialiased;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* Header */
+
+.header {
+    position: fixed;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4267b2;
+    color: #ffffff;
+    font-weight: bold;    
+    padding: 10px;
+    border-bottom: 1px solid #29487d;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    cursor: pointer;
+    text-decoration: none;  
+    z-index: 1;  
+}
+.header-logo {
+    font-size: 22px;
+}
+.header-profile-box {
+    width: 126px;
+    display: flex;
+    justify-content: end;
+    align-items: center;    
+}
+.header-profile {
+    font-size: 12px;
+}
+.header-avatar {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;    
+}
+
+/* PostList */
+
+.post-list {
+    position: relative;
+    top: 56px;
+    margin: 0 auto;
+    width: 700px;
+}
+
+/* Post */
+
+.post {
+    position: relative;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: white;    
+}
+.post-header {
+    display: flex;
+    padding: 10px;
+}
+.post-author {
+    font-size: 14px;
+    line-height: 1.38;
+    font-weight: bold;
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;    
+}
+.post-date {
+    font-size: 12px;
+    color: #616770;
+}
+.post-text {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.38;
+}
+
+/* Comment */
+
+.comment-author {
+    font-size: 13px;
+    line-height: 1.38;
+    font-weight: bold;
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;    
+}
+.comment {
+    font-size: 13px;
+    background-color: #f2f3f5;
+    border-radius: 16px;
+    padding: 10px;
+    margin-bottom: 10px;    
+    display: flex;
+}
+.avatar {
+    /* This image is 687 wide by 1024 tall, similar to your aspect ratio */
+    background-image: url('http://i.stack.imgur.com/Dj7eP.jpg');    
+    /* make a square container */
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+    /* center the image vertically and horizontally */
+    background-position: top center;
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;    
+}
+.comment-text {
+    font-size: small;
+    flex: 1;
+}
+
+.avatar-diego {background-image: url('https://scontent.fria3-1.fna.fbcdn.net/v/t1.0-1/p160x160/59480734_2249174048509235_2974090043016085504_n.jpg?_nc_cat=111&_nc_sid=dbb9e7&_nc_eui2=AeErnS1aKiF0jPq-lQoM6bufnUZIublyMpeU3V0l1mDv1X23RxEMFd-NF6aaXAqh6bPvo8wz159xPOTnp2FFuDDP3qoGYyUosUilFvxPZp-33Q&_nc_ohc=tL2sQu_KxNsAX9L7el2&_nc_ht=scontent.fria3-1.fna&_nc_tp=6&oh=b38c0435b60cb73da156b36909dbe45f&oe=5EA55733');}
+.avatar-julio {background-image: url('https://scontent.fria3-1.fna.fbcdn.net/v/t1.0-1/p160x160/87936848_3065350366850186_5212260946218582016_o.jpg?_nc_cat=106&_nc_sid=dbb9e7&_nc_eui2=AeFPS2HHJ_r5Ei9FhGIijw1ImiFk-tKljSGfNsm1hdfP0RPT1KVpTcUFE4CwH81Gko0Tpi7w4Q8qqPhlXoNnt0D7vW-bwc2FSmT33M-bb6tATg&_nc_ohc=6mZfXjMvmFIAX9zg12-&_nc_ht=scontent.fria3-1.fna&_nc_tp=6&oh=f6461a92ff5e01cd0fa49dae95fc5f55&oe=5EA59D32');}
+.avatar-gabriel {background-image: url('https://scontent.fria3-1.fna.fbcdn.net/v/t1.0-1/p160x160/28166763_1574074142705401_3817739364812084841_n.jpg?_nc_cat=108&_nc_sid=dbb9e7&_nc_eui2=AeGVJUIvPzf_zPd_9WIitr5mRkNxE3H2foQCv3XCfxOgj71MKWDBP1mZReIlsolxWl9tQnPdJZt5zcmE5wtVjqIIAUh924ACQlS0xVaYr1z__A&_nc_ohc=6mQUcS-w0iwAX_Z0JYc&_nc_ht=scontent.fria3-1.fna&_nc_tp=6&oh=f0d757c67e1d36a424608d049fbbca2d&oe=5EA5D41E');}
+.avatar-roberto {background-image: url('https://scontent.fria3-1.fna.fbcdn.net/v/t1.0-1/p240x240/26733604_10214731659955197_3447193399133910388_n.jpg?_nc_cat=106&_nc_sid=dbb9e7&_nc_eui2=AeH3BUcGU8V6906jSfnFy-42tohvs0sIbHib6dywHp1F2yT5hrggo2-MR8IJ95a190hNbc03B8C2anx1MejM_TXdytXT4cverFH_WJEh4VeLfA&_nc_ohc=Ga75iN6hU8oAX8nR-ry&_nc_ht=scontent.fria3-1.fna&_nc_tp=6&oh=a00082670704dd3e28193f7d2b8cb9f9&oe=5EA688BD');}
