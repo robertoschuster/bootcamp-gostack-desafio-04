@@ -1,0 +1,25 @@
+/* Comment */
+
+.comment {
+  font-size: 13px;
+  background-color: #f2f3f5;
+  border-radius: 16px;
+  padding: 10px;
+  margin-bottom: 10px;    
+  display: flex;
+}
+
+.comment-author {
+  font-size: 13px;
+  line-height: 1.38;
+  font-weight: bold;
+  color: #385898;
+  cursor: pointer;
+  text-decoration: none;    
+}
+
+.comment-text {
+  font-size: small;
+  flex: 1;
+}
+
